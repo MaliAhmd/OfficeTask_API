@@ -1,0 +1,400 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden !important;
+    background: #efefef;
+    line-height: 1.4;
+    color: #555;
+    font-weight: 400;
+    font-family: 'Spoqa Han Sans', sans-serif;
+    width: 100%;
+}
+.header{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, .9);
+    width: 100%;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+    justify-content: space-between;
+}
+.header h1 {
+    margin: 0;
+    padding: 11px 0 12px 15px;
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    color: #305bbb;
+}
+.header .hfirst{
+    flex-basis: 50%;
+}
+.header>div:last-child{
+    padding-right: 10px;
+    text-align: right;
+    box-sizing: border-box;
+}
+.header a.logout {
+    border: 0;
+    border-radius: 4px;
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #305bbb;
+    line-height: 1;
+    text-decoration: none;
+}
+.logout ion-icon {
+    font-size: 23px; /* Increase the size of the icon */
+    vertical-align: middle; 
+}
+
+.header a:hover {
+    background: #305bbb;
+    color: #fff;
+}
+
+.leftmenu{
+    position: fixed;
+    z-index: 4000;
+    float: left;
+    background: #282d35;
+    top: 53px;
+    margin: 0 auto;
+    border-radius: 0 7px 7px 0;
+    width: 180px;
+    height: 94vh;
+    height: calc(100vh - 63px);
+    text-align: center;
+    color: #fff;
+    transition: 0.3s ease;
+}
+.arrow {
+    position: absolute;
+    z-index: 1000;
+    background: #282d35;
+    border-radius: 0 5px 5px 0;
+    padding: 10px 0;
+    top: 12px;
+    right: -24px;
+    line-height: 1;
+    cursor: pointer;
+    background: #868d97;
+    border-radius: 5px 0 0 5px;
+    right: 0;
+}
+#arrow-right {
+    display: none;
+}
+.section{
+    list-style: none;
+    padding: 0;
+}
+.section li{
+    padding: 15px;
+    text-align: left;
+    border-top: thin solid #363d49;
+    border-bottom: thin solid #1b1f25;
+    line-height: 1;
+}
+.section li:first-child {
+    border-top: 0;
+}
+.section li:hover {
+    color: #a6d0ff;
+}
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+.material-symbols-outlined {
+    vertical-align: middle;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+.containerWrap{
+    padding: 53px 0 0 180px;
+}
+.inner{
+    position: relative;
+    background: #fff;
+    margin: 0 auto;
+    padding: 20px;
+    width: 99%;
+    box-sizing: border-box;
+    border-radius: 7px;
+    min-height: 100vh;
+    min-height: calc(100vh - 64px);
+}
+.inner.full-width {
+    width: 112%;
+    margin-left: -174px;
+}
+.inner h2{
+    display: inline-block;
+    margin: 0 0 10px;
+    font-size: 2em;
+    letter-spacing: -0.05em;
+    color: #222;
+}
+.main li{
+    padding: 2px 0;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.hide{
+    transform: translateX(-100%);
+}
+
+.hidden{
+    display: none;
+}
+.rightalign{
+    right: -24px !important;
+    background: #282d35 !important;
+    border-radius: 0 5px 5px 0 !important;
+}
+
+.loginWrap{
+    margin: 50px auto 0 auto;
+    width: 600px;
+    max-width: 90%;
+    background: #fff;
+    border-radius: .5rem;
+    text-align: center;
+    box-shadow: 0 4px 25px 0 rgba(0,0,0,.1)
+}
+.wrapchild{
+    padding: 30px;
+}
+.register{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.register div:first-child{
+    flex: 0 0 26%;
+    position: relative;
+    padding-left: 12px;
+    box-sizing: border-box;
+    left: -5px;
+}
+.loginWrap .input{
+    position: relative;
+    padding: 5px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+.loginWrap div .register label{
+    font-size: 0.9em;
+    font-weight: 550;
+}
+.in{
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    background: #fff;
+    padding: 8px 15px 11px;
+    font-size: 1.1em;
+    line-height: 1;
+    width: calc(100% - 30px);
+    outline: none;
+}
+.spann{
+    position: absolute;
+    top: 5px;
+    right: -2px;
+    border: 1px solid #aaa;
+    border-radius: 0 4px 4px 0;
+    background: #eee;
+    padding: 9px 12px 8px;
+}
+.after::after{
+    content: "*";
+    color: red;
+    top: -4px;
+    position: absolute;
+    font-size: 1.5em;
+    left: 0;
+}
+.btnchreq{
+    background: #a6d0ff;
+    border: 0;
+    border-radius: 5px;
+    margin: 20px 0 0 0;
+    padding: 12px 0;
+    width: 100%;
+    font-size: 1.1em;
+    font-weight: 550;
+    color: #305bbb;
+    line-height: 1;
+}
+.btnchreq:hover{
+    background: #305bbb;
+    color: #fff;
+}
+.count{
+    padding: 0 0 5px;
+    color: #333;
+}
+.tableWrap{
+    position: relative;
+    z-index: 1;
+    table-layout: fixed;
+    min-height: 500px;
+    padding: 0 0 20px;
+    box-sizing: border-box;
+}
+.table{
+    clear: both;
+    table-layout: fixed;
+    border-spacing: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.table thead tr th{
+    font-weight: 400;
+    font-size: 1em;
+    text-align: center;
+    background: #eaeaea;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #ccc;
+    padding: 10px 0;
+    color: #000;
+    line-height: 1;
+    letter-spacing: -0.1em;
+}
+.table tbody tr td{
+    background: #fff;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    padding: 7px 5px;
+    font-size: .9em;
+    line-height: 1.2;
+}
+.table tbody tr:nth-child(even) td{
+    background-color: #f9f9f9;;
+}
+.bluebox{
+    display: inline-block;
+    background: #007bff;
+    border-radius: 3px;
+    margin-left: 3px;
+    padding: 3px 5px;
+    color: #fff;
+    line-height: 1;
+}
+.lightbox{
+    display: inline-block;
+    background: #fcf6df;
+    margin-left: 3px;
+    padding: 3px 5px;
+    border-radius: 3px;
+}
+.pagination{
+    font-size: 0.8em;
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    list-style: none;
+}
+.gameWrap{
+    position: relative;
+    z-index: 1;
+    table-layout: fixed;
+    min-height: 500px;
+    padding: 0 0 20px;
+    box-sizing: border-box;
+}
+dt{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px
+}
+dt a{
+    display: block;
+    font-size: 1.2em;
+    color: #000;
+    text-decoration: none;
+}
+dt span{
+    display: inline-block;
+    background: #305bbb;
+    border-radius: 2px;
+    padding: 5px 10px;
+    line-height: 1;
+    font-size: .8em;
+    color: #fff;
+}
+.down{
+    display: none;
+    margin: 0;
+    padding: 10px;
+}
+.gameunit{
+    display: flex;
+    flex-wrap: wrap;
+}
+.gameunit li{
+    float: left;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 200px;
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+}
+.imgwrap{
+    position: relative;
+    background: #eee;
+    border-radius: 10px;
+    width: 200px;
+    overflow: hidden;
+}
+.imgwrap img{
+    max-width: 200px;
+    vertical-align: top;
+}
+.title{
+    font-size: 1.1em;
+    color: #000;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.subtitle{
+    color: #888;
+}
+
+

@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden !important;
+    background: #efefef;
+    line-height: 1.4;
+    color: #555;
+    font-weight: 400;
+    font-family: 'Spoqa Han Sans', sans-serif;
+    width: 100%;
+}
+.logincon{
+    margin: 50px auto 0 auto;
+    width: 340px;
+    max-width: 90%;
+    background: #fff;
+    border-radius: .5rem;
+    text-align: center;
+    box-shadow: 0 4px 25px 0 rgba(0, 0, 0, .1);
+}
+.h1{
+    padding: 30px;
+}
+
+.logincon h1 {
+    margin: 0 0 20px 0;
+    font-weight: 700;
+    line-height: 1;
+    color: #305bbb;
+    letter-spacing: -0.05em;
+}
+
+.logincon .input {
+    position: relative;
+    padding: 5px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+form{
+    display: block;
+    margin-top: 0em;
+    unicode-bidi: isolate;
+}
+input.ed{
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    background: #fff;
+    padding: 8px 15px;
+    font-size: 1.1em;
+    line-height: 1;
+    width: 90%;
+
+}
+.logincon button.btnlogin {
+    background: #a6d0ff;
+    border: 0;
+    border-radius: 5px;
+    margin: 20px 0 0 0;
+    padding: 12px 0;
+    width: 40%;
+    font-size: 1.1em;
+    font-weight: 550;
+    color: #305bbb;
+    line-height: 1;
+}
+ .logincon button.btnlogin:hover{
+    background: #305bbb;    
+    color: #fff;
+ }
